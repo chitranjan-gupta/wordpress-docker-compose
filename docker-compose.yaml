@@ -44,8 +44,8 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
-      WORDPRESS_HOME: https://cautious-cod-pg95qvq9vrw296pj-8000.app.github.dev
-      WORDPRESS_URL: https://cautious-cod-pg95qvq9vrw296pj-8000.app.github.dev
+      WORDPRESS_HOME: https://blog.example.com
+      WORDPRESS_URL: https://blog.example.com
       WORDPRESS_DEBUG: "true"
 
     networks:

@@ -6,12 +6,13 @@
 5. docker volume rm <volumename>
 6. docker images
 7. docker rmi <imageid>
+8. docker exec -it <containerid> /bin/bash
 
--e "s!localhost!cautious-cod-pg95qvq9vrw296pj.github.dev!g"
--e "s!#(\s*ServerName\s+)www\.example\.com!\1cautious-cod-pg95qvq9vrw296pj.github.dev!g"
+-e "s!localhost!blog.example.com!g"
+-e "s!#(\s*ServerName\s+)www\.example\.com!\1blog.example.com!g"
 
-COPY ./cautious-cod-pg95qvq9vrw296pj-8000.app.github.dev.conf /etc/apache2/sites-available
-RUN a2ensite cautious-cod-pg95qvq9vrw296pj-8000.app.github.dev.conf
+COPY ./blog.example.com.conf /etc/apache2/sites-available
+RUN a2ensite blog.example.com.conf
 
 Sources:
 1. https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose

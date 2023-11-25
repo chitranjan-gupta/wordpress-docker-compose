@@ -1,4 +1,6 @@
-spring-boot/
-wp-graphql.1.18.2.zip
-README.md
+.git/
 .gitignore
+.dockerignore
+docker-compose.yaml
+Dockerfile
+temp.txt
