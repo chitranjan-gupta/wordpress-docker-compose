@@ -14,6 +14,11 @@
 COPY ./blog.example.com.conf /etc/apache2/sites-available
 RUN a2ensite blog.example.com.conf
 
+COPY ./.htaccess /usr/src/wordpress/.htaccess
+
+Custom Permalink
+/index.php/%year%/%monthnum%/%day%/%postname%/
+
 Sources:
 1. https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
 2. https://wordpress.org/documentation/article/administration-over-ssl/#using-a-reverse-proxy
